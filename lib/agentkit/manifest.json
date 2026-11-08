@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-algodocs",
+      "description": "Connect AI agents to Algodocs using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-algodocs/SKILL.md": "9aac3fbd53341f58c1ffd243a1c171c8f612f2fef5979e404a17d02bc2bfcd50"
+  }
+}

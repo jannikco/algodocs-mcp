@@ -1,39 +1,62 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "3f7942b8fc9ff0de64beeff8a8f1ce87859a0bfe834941f077cfa6d879d72207",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://api.algodocs.com/"
-  ],
   "id": "algodocs-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Algodocs MCP setup and connection checker",
-  "description": "Generate Algodocs MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Algodocs for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-algodocs-mcp",
+  "sourceRevision": "b597617e1c9a9cf2cd9a4996331ff5c2414b31f9f62b6aaacd69b5df9a7b8f90",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://api.algodocs.com/"
+  ],
+  "utility": {
+    "problem": "Prepare Algodocs and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "algodocs",
   "appName": "Algodocs",
-  "providerDocs": "https://api.algodocs.com/",
-  "providerWebsite": "https://algodocs.com/",
-  "authentication": {
-    "type": "api_key_header",
-    "requiredCredentialFields": [
-      "api_key"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://api.algodocs.com/",
-    "tenantRequired": false,
-    "accountParameterNames": []
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
   },
-  "attributionSlug": "github-algodocs-mcp",
   "factory": "leadadapter-pipmcp",
-  "generatorVersion": 1
+  "generatorVersion": 3
 }
