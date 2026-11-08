@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "3f7942b8fc9ff0de64beeff8a8f1ce87859a0bfe834941f077cfa6d879d72207",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://api.algodocs.com/"
+  ],
+  "id": "algodocs-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "Algodocs MCP setup and connection checker",
+  "description": "Generate Algodocs MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "algodocs",
+  "appName": "Algodocs",
+  "providerDocs": "https://api.algodocs.com/",
+  "providerWebsite": "https://algodocs.com/",
+  "authentication": {
+    "type": "api_key_header",
+    "requiredCredentialFields": [
+      "api_key"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://api.algodocs.com/",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-algodocs-mcp",
+  "factory": "leadadapter-pipmcp",
+  "generatorVersion": 1
+}
